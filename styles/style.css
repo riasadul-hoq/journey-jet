@@ -2,12 +2,118 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap");
 
-body {
-  width: 1440px;
+* {
   margin: 0 auto;
   font-family: "Mulish", sans-serif;
 }
 
+body {
+  /* width: 1440px; */
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+/* Header Styles */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 53px;
+}
+
 .header-container {
   display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-title {
+  color: #131318;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.header-title > span {
+  color: #ff5400;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+/* NAV Styles */
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 44px;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #424247;
+}
+
+#home-nav {
+  color: #ff5400;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* Banner Styles */
+.banner {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../images/banner.png");
+  width: 1170px;
+  height: 500px;
+  border-radius: 16px;
+  margin-top: 60px;
+}
+
+.banner-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 106px;
+}
+
+.banner-description {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 24px;
+  line-height: 26px;
+}
+
+/* Media Query for 600px device */
+@media only screen and (max-width: 600px) {
+  .header-section {
+    flex-direction: column;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  .banner {
+    width: 335px;
+    height: 483px;
+  }
+
+  .banner-title {
+    font-size: 1.25rem;
+  }
+
+  .banner-description {
+    font-size: 0.875rem;
+  }
 }
