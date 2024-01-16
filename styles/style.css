@@ -211,6 +211,54 @@ nav li a {
   margin-top: 16px;
 }
 
+/* Footer Section Styles  */
+
+.footer-section {
+  width: 1440px;
+  height: 502px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 100px;
+  text-align: center;
+}
+
+.footer-container {
+  padding-top: 100px;
+  display: flex;
+  gap: 1rem;
+
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 4.2rem;
+  list-style: none;
+  overflow: hidden;
+}
+
+.social-icon-container {
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+.social-icon-container > i {
+  padding-left: 30px;
+}
+
+hr {
+  width: 872px;
+  background: rgba(19, 19, 24, 0.1);
+}
+
+.footer-text {
+  color: #131318;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+
 /* Media Query for 600px device */
 @media only screen and (max-width: 600px) {
   body {
@@ -314,4 +362,37 @@ nav li a {
   .hotels {
     margin-bottom: 16px;
   }
+}
+
+.footer-section {
+  width: auto;
+  height: auto;
+  margin-top: 24px;
+}
+
+.footer-container {
+  padding-top: 33px;
+}
+
+#footer-description > br {
+  content: "";
+}
+
+.social-icon-container {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.social-icon-container > i {
+  padding-left: 15px;
+}
+
+hr {
+  width: 335px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 31px;
 }
