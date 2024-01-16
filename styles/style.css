@@ -326,7 +326,7 @@ hr {
 }
 
 /* Media Query for 600px device */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body {
     /* width: 600px; */
     padding-left: 20px;
@@ -342,12 +342,14 @@ hr {
   }
 
   .banner {
-    width: 500px;
-    height: 483px;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
   }
 
   .banner-title {
     font-size: 1.25rem;
+    padding-top: 32px;
   }
 
   .banner-description {
@@ -363,11 +365,12 @@ hr {
     width: auto;
     height: auto;
     padding-top: 16px;
-    padding-bottom: 0px;
+    /* padding-bottom: 16px; */
   }
 
   .search-input {
     padding: 16px;
+    margin-bottom: 16px;
   }
 
   .tour-container {
@@ -393,9 +396,9 @@ hr {
     margin-bottom: 24px;
   }
 
-  .tour-image {
-    width: auto;
-    height: auto;
+  .tour-image > img {
+    width: 100%;
+    height: 100%;
   }
 
   .destination-container {
@@ -453,8 +456,8 @@ hr {
   }
 
   .newsletter-text {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding-left: 24px;
     padding-top: 24px;
   }
@@ -468,7 +471,7 @@ hr {
   }
 
   .newsletter-text > hr {
-    width: 450px;
+    width: auto;
   }
 
   .newsletter-form {
@@ -476,13 +479,13 @@ hr {
   }
 
   .newsletter-form-input {
-    width: 393px;
+    width: auto;
     height: 52px;
     padding-left: 20px;
   }
 
   #subscribe-button {
-    width: 393px;
+    width: auto;
     height: 52px;
     border-radius: 8px;
   }
