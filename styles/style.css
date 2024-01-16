@@ -13,6 +13,12 @@ body {
   padding-right: 135px;
 }
 
+.section-title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
 .para-description {
   margin-top: 1.5rem;
   color: rgba(19, 19, 24, 0.7);
@@ -123,10 +129,86 @@ nav li a {
   padding-right: 135px;
 }
 
-.tour-title {
+/* Destination Section Styles */
+.destination-container {
+  margin-top: 100px;
+  padding-left: 135px;
+  padding-right: 135px;
+  text-align: center;
+}
+
+.destination-image-container {
+  margin-top: 24px;
+}
+
+.destination-image-container > img {
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+/* Why Us Section Styles */
+.why-us-container {
+  margin-top: 100px;
+  padding-left: 135px;
+  padding-right: 135px;
+  text-align: center;
+}
+
+.hotel-service-container {
+  display: flex;
+  margin-top: 48px;
+}
+
+.why-us-container img {
+  margin-bottom: 32px;
+}
+
+.hotels {
+  padding-left: 32px;
+  padding-top: 32px;
+  text-align: left;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  width: 573px;
+  height: 284px;
+}
+
+.service {
+  padding-left: 32px;
+  padding-top: 32px;
+  text-align: left;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+  width: 573px;
+  height: 284px;
+  margin-bottom: 24px;
+}
+
+.guarantee {
+  padding-left: 32px;
+  padding-top: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  width: 573px;
+  height: 284px;
+  text-align: left;
+}
+
+.why-title {
   color: #131318;
-  font-size: 2.5rem;
+  font-size: 24px;
   font-weight: 800;
+}
+
+.why-description {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 16px;
 }
 
 /* Media Query for 600px device */
@@ -165,7 +247,7 @@ nav li a {
     padding-right: 20px;
   }
 
-  .tour-title {
+  .section-title {
     font-size: 1.25rem;
   }
 
@@ -184,5 +266,52 @@ nav li a {
   .tour-image {
     width: auto;
     height: auto;
+  }
+
+  .destination-container {
+    margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  #destination-description > br {
+    content: "";
+  }
+
+  .destination-image-container > img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .why-us-container {
+    margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #why-description > br {
+    content: "";
+  }
+
+  .hotel-service-container {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .why-us-container img {
+    margin-bottom: 16px;
+  }
+
+  .hotels,
+  .service,
+  .guarantee {
+    width: auto;
+    height: auto;
+  }
+
+  .hotels {
+    margin-bottom: 16px;
   }
 }
